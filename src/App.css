@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  --orange: hsl(25, 97%, 53%);
+
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-grey-transparent: hsla(216, 12%, 54%, .1);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-transparent: hsla(213, 19%, 18%, .1);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+}
+
+.App {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(var(--dark-blue), var(--dark-blue-transparent) 80%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: overpass, sans-serif;
+  padding: 1.5rem;
+}
+
+.circle {
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--medium-grey-transparent);
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  
+}
+
+.rating-container:hover {
+  background-color: var(--medium-grey);
+  color: white;
+  cursor: pointer;
+}
+
+.bubble-container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--medium-grey);
+  margin-top: 1rem;
+  
+}
+
+.rating-heading {
+  color: white;
+}
+
+.rating-description {
+  color: var(--medium-grey);
+}
+
+.submit-button {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 2rem;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.active {
+  background-color: var(--orange);
+  color: white;
+}
+
+.star-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.submitted {
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.submitted-rating-container {
+  background-color: var(--medium-grey-transparent);
+  width: 50%;
+  height: 1.5rem;
+  border-radius: 10px;
+  margin: auto;
+  color: hsl(25, 60%, 53%);
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.submitted-rating-text {
+  margin-top: .3rem;
+}
+
+
+
